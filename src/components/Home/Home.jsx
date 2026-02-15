@@ -19,7 +19,7 @@ export default function Home() {
       liveUrl: "https://coderealm-e7af.onrender.com",
       repoUrl: "#", // TODO: add GitHub link
     },
-    {
+    /* {
       title: "Project Placeholder – Case Study",
       subtitle: "Add a second strong project",
       description:
@@ -38,7 +38,7 @@ export default function Home() {
       tech: "Node • Express • MySQL",
       liveUrl: "#",
       repoUrl: "#",
-    },
+    }, */
   ];
 
   const skills = [

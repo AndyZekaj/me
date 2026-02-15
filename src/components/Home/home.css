@@ -259,6 +259,10 @@
   color: rgba(31, 26, 20, 0.72);
   line-height: 1.75;
   max-width: 82ch;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Work list (editorial rows) */
@@ -319,6 +323,7 @@
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  
 }
 
 .textLink {
@@ -341,7 +346,7 @@
 
 .fact {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 1fr;
   gap: 18px;
   padding: 16px 0;
   border-top: 1px solid rgba(31, 26, 20, 0.12);
@@ -367,6 +372,10 @@
   line-height: 1.9;
   display: grid;
   gap: 14px;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Contact */
