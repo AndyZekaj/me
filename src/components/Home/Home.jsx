@@ -110,7 +110,7 @@ export default function Home() {
             </div>
             <div className="metaItem">
               <span className="metaItem__label">Location</span>
-              <span className="metaItem__value">Germany (near Ulm)</span>
+              <span className="metaItem__value">88512 Mengen, Germany</span>
             </div>
             <div className="metaItem">
               <span className="metaItem__label">Links</span>
