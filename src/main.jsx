@@ -8,7 +8,7 @@ import { ContextProvider } from './context/SocketContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <ContextProvider>
-      {/* <Home /> */}
+      <Home />
       <VideoChat />
   </ContextProvider>,
 )
