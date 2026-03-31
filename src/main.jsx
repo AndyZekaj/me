@@ -1,11 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import Home from './components/Home/Home.jsx'
+import VideoChat from "./components/videoChat/VideoChat.jsx"
+
+import { ContextProvider } from './context/SocketContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Home />
-  </StrictMode>,
+  <ContextProvider>
+      {/* <Home /> */}
+      <VideoChat />
+  </ContextProvider>,
 )

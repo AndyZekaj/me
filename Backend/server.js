@@ -21,10 +21,28 @@ const io = new Server(server, {
 
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5002;
 
 app.get("/", (req, res) => {
     res.send(`Server is runing.`)
 });
+
+io.on("connection", (socket) => {
+    socket.emit("me", socket.id);
+
+    socket.on("disconnect", () => {
+        socket.broadcast.emit("callended");
+    });
+
+    socket.on("calluser", ({ userToCall, signalData, from, name }) => {
+        io.to(userToCall).emit("calluser", { signal: signalData, from, name });
+    })
+
+    socket.on("answercall", (data) => {
+        io.to(data.to).emit("callaccepted", data.signal);
+    })
+});
+
+
 
 server.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
